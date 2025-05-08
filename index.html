@@ -7,7 +7,33 @@
     <title>Test Page: Don't Panic</title>
 
     <style>
+        div {
+            border: 1px solid black;
+        }
 
+        a {
+            color: red;
+        }
+
+        #exec-bio {
+            background-color: lightgray;
+        }
+
+        .bio-box {
+            border: 1px solid black;
+        }
+
+        .bio-box a {
+            color: green;
+        }
+
+        #trump {
+            background-color: orange;
+        }
+
+        .water {
+            background-color: azure;
+        }
     </style>
 </head>
 
@@ -16,28 +42,28 @@
     <h1>I'm an h1</h1>
     <ul>
         <li>
-            <a href="https://example.com/" style="color: red;">Link</a>
+            <a href="https://example.com/">Link</a>
+        </li>
+        <li id="trump">
+            <a href="https://example.com/">Link</a>
         </li>
         <li>
-            <a href="https://example.com/" style="color: red;">Link</a>
-        </li>
-        <li>
-            <a href="https://example.com/" style="color: red;">Link</a>
+            <a href="https://example.com/">Link</a>
         </li>
     </ul>
     <br>
     <h2>I'm an h2</h2>
-    <div style="border: 1px solid black;">
-        <a href="https://example.com/" style="color: green;">I'm a link</a>
+    <div id="exec-bio" class="bio-box">
+        <a href="https://example.com/">I'm a link</a>
     </div>
-    <div style="border: 1px solid black;">
-        <a href="https://example.com/" style="color: green;">I'm a link</a>
+    <div class="bio-box water">
+        <a href="https://example.com/">I'm a link</a>
     </div>
-    <div style="border: 1px solid black;">
-        <a href="https://example.com/" style="color: green;">I'm a link</a>
+    <div class="bio-box">
+        <a href="https://example.com/">I'm a link</a>
     </div>
-    <div style="border: 1px solid black;">
-        <a href="https://example.com/" style="color: green;">I'm a link</a>
+    <div class="bio-box">
+        <a href="https://example.com/">I'm a link</a>
     </div>
 
 </body>
