@@ -14,18 +14,29 @@
 
         /* Social Styles */
         .social-link {
-            background: rgba(150, 150, 150, .2);
+            background: rgba(150, 150, 150, 0.5);
             color: blue;
         }
 
         /* Bio Styles */
-        .bio-box {
-            border: 1px solid black;
+         .bio-wrapper {
+            font-size: 24px;
         }
-
+         .bio-box {
+            border: 1px solid black;
+            font-size: 1rem;
+            width: 50%;
+        }
+        .bio-box h3 {
+            font-size: 1.5em;
+        }
+        .bio-copy {
+            font-size: 1em;       
+        }
         .bio-copy a {
             color: green;
         }
+
     </style>
 </head>
 
@@ -45,6 +56,7 @@
     </ul>
     <br>
     <h2>I'm an h2</h2>
+    <div class="bio-wrapper">
     <div class="bio-box">
         <h3>Michael Hartl</h3>
         <a href="https://x.com/mhartl" class="social-link">here</a>
@@ -52,7 +64,7 @@
             <p>
                 Known for his dazzling charm, rapier wit, and unrivaled humility, Michael is the creator of the <a
                     href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> and principal author of the <a
-                    href="https://learnenough.com/">Learn Enough to Be Dangerous</a> introductor sequence. Michael is
+                    href="https://learnenough.com/">Learn Enough to Be Dangerous</a> introductory sequence. Michael is
                 also
                 notorious as the founder of <a href="https://tauday.com/">Tau Day</a> and author of <a
                     href="https://tauday.com/tau-manifesto"><em>The Tau Manifesto</em></a>, but rumors that he's
@@ -89,5 +101,6 @@
         <p>
             The Future
         </p>
+    </div>
     </div>
 </body </html>
