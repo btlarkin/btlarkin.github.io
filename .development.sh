@@ -65,14 +65,14 @@ if ! tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
     # --- Configure dedicated windows for CSS and JS files ---
 
     # CSS Window: Create a new window for style.css if it exists
-    if [ -f "${PROJECT_PATH}/style.css" ]; then
+    if [ -f "${PROJECT_PATH}/css/style.css" ]; then
         tmux new-window -n css -t "${SESSION_NAME}"
         sleep 0.5 # Give tmux a moment to register the new window
         tmux select-window -t "${SESSION_NAME}:3" # Select the newly created window
         # Explicitly target pane 1 of the 'css' window.
         tmux send-keys -t "${SESSION_NAME}:3.1" "clear" C-m
         sleep 0.5
-        tmux send-keys -t "${SESSION_NAME}:3.1" "cd ${PROJECT_PATH}" C-m
+        tmux send-keys -t "${SESSION_NAME}:3.1" "cd ${PROJECT_PATH}/css" C-m
         sleep 0.5
         tmux send-keys -t "${SESSION_NAME}:3.1" "vim style.css" C-m
     fi
